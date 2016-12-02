@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="techonline">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Technology for business</title>
+		
+		<!-- CSS declarations -->
+		<link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/app.css" rel="stylesheet">
+		
+		<!-- JavaScript declarations -->
+		<script type="text/javascript" src="/js/angularjs/angular.min.js"></script>
+		<script type="text/javascript" src="/js/angularjs/angular-route.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+		<script type="text/javascript" src="/js/navigator.js"></script>
+		<script type="text/javascript" src="/js/controller/HomeController.js"></script>
+		<script type="text/javascript" src="/js/controller/UsersController.js"></script>
+	</head>
+<body ng-cloak class="ng-cloak">
+
+	<div class="container">
+		
+		<!-- Row 1 -> Navigation bar -->
+		<div class="row">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<ul class="nav nav-pills">
+					  <li role="presentation" class="active"><a href="#/">Home</a></li>
+					  <li role="presentation"><a href="#/users">Users</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		
+		<!-- Row 2 -> Display area for ng-view -->
+		<div ng-view></div>
+
+	</div>
+	
+</body>
+</html>

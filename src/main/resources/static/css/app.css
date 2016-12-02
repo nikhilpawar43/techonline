@@ -1,0 +1,11 @@
+[ng\:cloak], [ng-clock], .ng-clock {
+	display: none !important;
+}
+
+body { 
+	padding-top: 70px; 
+}
+
+.navbar .nav {
+	margin-top : 5px;
+}
